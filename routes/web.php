@@ -13,6 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// Route::post('/api/generate-pdf', function(Request $request) {
+//     // Retrieve the data from the request
+//     $data = $request->input('data');
+  
+//     // Generate the PDF document using a library like Dompdf
+//     $pdf = App::make('dompdf.wrapper');
+//     $pdf->loadHTML('<h1>' . $data . '</h1>');
+  
+//     // Return the PDF document as a response
+//     return $pdf->stream();
+//   });
+
+
 Route::get('/', function () {
-    return view('FrontEnd.index');
+    return view('index');
 });
